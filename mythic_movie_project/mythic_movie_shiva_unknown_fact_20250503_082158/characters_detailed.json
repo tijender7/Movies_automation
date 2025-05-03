@@ -1,0 +1,48 @@
+{
+  "characters": [
+    {
+      "name": "Shiva",
+      "overall_description": "The cosmic destroyer, ascetic yogi, and divine father of balance, embodying both creation and dissolution in his being.",
+      "visual_details": {
+        "gender": "Male",
+        "age_appearance": "Eternal",
+        "body_type": "Extremely muscular, bodybuilder physique",
+        "height_estimate": "7 feet",
+        "skin_tone": "Ashen blue",
+        "hair_color": "Jet black",
+        "hair_style": "Matted dreadlocks flowing down the back, tied in a topknot",
+        "eye_color": "Glowing icy blue with a vertical third eye on the forehead",
+        "clothing_style": "Minimalistic ascetic attire",
+        "clothing_colors": [
+          "Tiger stripe",
+          "Earth brown",
+          "Sky grey"
+        ],
+        "accessories": "Snake coiled around neck, rudraksha beads, crescent moon on hair, Ganga flowing from head",
+        "notable_features": "Third eye glowing with cosmic fire, scar on chest from the return of the creation, aura of crackling energy"
+      }
+    },
+    {
+      "name": "The Nameless Being",
+      "overall_description": "A genderless, divine creation of Shiva born from his third eye, embodying cosmic balance and light.",
+      "visual_details": {
+        "gender": "Androgynous",
+        "age_appearance": "Ageless",
+        "body_type": "Lithe and ethereal, with glowing musculature beneath translucent skin",
+        "height_estimate": "6 feet",
+        "skin_tone": "Glowing pale gold",
+        "hair_color": "Luminous silver-white",
+        "hair_style": "Flowing and weightless, like light in motion",
+        "eye_color": "Iridescent violet",
+        "clothing_style": "Celestial robes that shimmer like a nebula",
+        "clothing_colors": [
+          "Opalescent white",
+          "Starlight blue",
+          "Flame orange"
+        ],
+        "accessories": "Orb of flame hovering over one palm, stream of stardust trailing steps",
+        "notable_features": "Body emits soft light, markings of balance etched across skin, dissolves into energy"
+      }
+    }
+  ]
+}

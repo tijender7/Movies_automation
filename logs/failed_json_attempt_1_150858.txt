@@ -1,0 +1,16 @@
+--PROMPT--
+MODE:JSON
+TASK: Gen detailed image prompt for Scene 11.
+CONTEXT: D='With a whisper, his voice turns to thunder, summoning nature’s power.', BG='Wind-tossed forest erupting with divine force.', A='Vines, stars, and silence surge forward to combat the darkness.'
+CHAR: Lord Ganesha
+- VISUALS: gender:Male; age appearance:Child; body type:Sturdy; height estimate:Short; skin tone:Dusky; hair color:Black; eye color:Brown; clothing style:Traditional dhoti; clothing colors:['Orange', 'Gold']; accessories:Golden ornaments, sacred thread; notable features:Elephant head, golden aura, glowing lotus emerging from palm, calm expression with divine presence
+STYLE: Cinematic, detailed, mythic. LIGHTING: (e.g., dramatic). CAM: (e.g., low angle). MOOD: (e.g., tense).
+IMPORTANT: For every character described in the image prompt,
+- If the character is male, describe him as having a powerful, bodybuilder or fitness athlete physique—large, strong, and extremely muscular, exuding strength and dominance (not lean or skinny).
+- If the character is female, describe her as having a beautiful, athletic, fit, and subtly muscular figure—feminine, attractive, and strong, but not overly muscular.
+Make sure these physique and beauty details are clearly reflected in the visual description of each character.
+INSTRUCTIONS: Combine details. MUST feature Lord Ganesha w/ visuals.
+Output ONLY raw JSON: {"scene_number": 11, "prompt_text": "<prompt>"}
+
+IMPORTANT: Output ONLY raw JSON...
+--RESPONSE--

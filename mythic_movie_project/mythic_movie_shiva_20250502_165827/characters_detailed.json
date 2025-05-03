@@ -1,0 +1,70 @@
+{
+  "characters": [
+    {
+      "name": "Shiva",
+      "overall_description": "A cosmic ascetic seated in divine stillness, the god of destruction and rebirth, embodying power, serenity, and timeless mystery.",
+      "visual_details": {
+        "gender": "Male",
+        "age_appearance": "Timeless, appears around 35",
+        "body_type": "Extremely muscular, bodybuilder physique",
+        "height_estimate": "7 feet",
+        "skin_tone": "Ash-grey with a subtle celestial glow",
+        "hair_color": "Jet black with blue undertones",
+        "hair_style": "Long, thick, coiled into a high jata with strands flowing",
+        "eye_color": "Glowing deep blue with a vertical third eye in fiery orange",
+        "clothing_style": "Minimal ascetic attire with sacred symbolism and tiger skin wrap",
+        "clothing_colors": [
+          "Brown",
+          "Black",
+          "Amber"
+        ],
+        "accessories": "Crescent moon on forehead, damaru in hand, serpent coiled around neck, rudraksha beads, Ganga flowing from hair",
+        "notable_features": "Third eye on forehead, glowing aura, ash-smeared skin, silent commanding presence, seated in meditative posture"
+      }
+    },
+    {
+      "name": "Nandi",
+      "overall_description": "Shiva’s divine bull companion and guardian, symbolizing unwavering devotion, patience, and strength.",
+      "visual_details": {
+        "gender": "Male",
+        "age_appearance": "Ageless divine form",
+        "body_type": "Massive, extremely muscular bull form with broad chest and strong limbs",
+        "height_estimate": "5 feet at the shoulder",
+        "skin_tone": "Radiant white with a silvery sheen and divine glow",
+        "hair_color": "Snow white",
+        "hair_style": "Smooth fur with a curly tuft on forehead and flowing tail hair",
+        "eye_color": "Golden brown with deep, serene pupils",
+        "clothing_style": "Regal divine ornaments and draped sacred cloth",
+        "clothing_colors": [
+          "Gold",
+          "Red",
+          "White"
+        ],
+        "accessories": "Decorated saddle cloth with sacred symbols, golden anklets, divine bell, ornamental forehead marking",
+        "notable_features": "Statue-like stillness, glowing horns, eyes filled with pure devotion, presence radiating calm"
+      }
+    },
+    {
+      "name": "Serpent",
+      "overall_description": "A mystical serpent coiled across Shiva’s shoulders, representing primal energy, cosmic awareness, and divine guardianship.",
+      "visual_details": {
+        "gender": "Male",
+        "age_appearance": "Ageless mystical creature",
+        "body_type": "Long, thick, grotesquely muscular serpent with sinuous strength",
+        "height_estimate": "6 feet in length when uncoiled",
+        "skin_tone": "Metallic emerald with dark obsidian stripes and glowing undertones",
+        "hair_color": "Dark green scaled texture",
+        "hair_style": "Glossy ridged scales running along spine like a mohawk",
+        "eye_color": "Fiery crimson with elliptical pupils radiating light",
+        "clothing_style": "Mystical adornment of glowing sigils patterned into scales",
+        "clothing_colors": [
+          "Emerald",
+          "Black",
+          "Crimson"
+        ],
+        "accessories": "Embedded ancient runes along spine, flickering aura around fangs, mystic smoke trailing from mouth",
+        "notable_features": "Forked tongue emitting low hum, piercing gaze, tense coiled posture, glowing scale markings"
+      }
+    }
+  ]
+}

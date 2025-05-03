@@ -1,0 +1,82 @@
+{
+  "movie_characters": [
+    {
+      "character_name": "Veeru",
+      "actor_name": "Dharmendra",
+      "description": "The fun-loving, flirtatious rogue with a golden heart — his drunken water-tank proposal scene to Basanti is pure cinema gold.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Jai",
+      "actor_name": "Amitabh Bachchan",
+      "description": "The brooding, sharp-shooter best friend — calm, cool, and the silent backbone of the Veeru-Jai duo.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Gabbar Singh",
+      "actor_name": "Amjad Khan",
+      "description": "The ruthless dacoit whose terrifying laugh and dialogues like 'Kitne aadmi the?' became immortal in Indian pop culture.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Thakur Baldev Singh",
+      "actor_name": "Sanjeev Kumar",
+      "description": "The stoic ex-police officer seeking justice with a deep personal loss — his presence added gravitas to the story.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Basanti",
+      "actor_name": "Hema Malini",
+      "description": "The chirpy, fearless tonga-driver whose non-stop chatter and brave spirit made her one of the most beloved heroines ever.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Radha",
+      "actor_name": "Jaya Bhaduri",
+      "description": "The silent widow with eyes full of unspoken emotions, embodying silent strength and resilience.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Samba",
+      "actor_name": "Mac Mohan",
+      "description": "Gabbar's trusted lieutenant, mostly remembered for standing silently behind him and the legendary 'Samba, kitne aadmi the?' scene.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Kaalia",
+      "actor_name": "Viju Khote",
+      "description": "Another sidekick of Gabbar whose trembling fear during Gabbar's grilling made 'Tera kya hoga Kaalia' an iconic meme even decades later.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Soorma Bhopali",
+      "actor_name": "Jagdeep",
+      "description": "The hilarious timber merchant from Bhopal whose slow, exaggerated storytelling style became a cult favorite.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Jailor",
+      "actor_name": "Asrani",
+      "description": "A ridiculous, British-era Jailor parodying Hitler — his 'HUM angrezon ke zamaane ke jailor hain' dialogue became legendary.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Imam Saheb",
+      "actor_name": "A. K. Hangal",
+      "description": "The blind elder of Ramgarh village, symbolizing wisdom, patience, and deep sorrow after personal loss.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Mausi",
+      "actor_name": "Leela Mishra",
+      "description": "Basanti’s hilarious, stern aunt — her no-nonsense attitude and arranged marriage scene added light moments.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Ahmed",
+      "actor_name": "Sachin Pilgaonkar",
+      "description": "The young and brave villager whose tragic death triggers the emotional revolt against Gabbar's tyranny.",
+      "release_year": "1975"
+    }
+  ]
+}

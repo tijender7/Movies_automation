@@ -1,0 +1,88 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_description": "A dense twilight forest filled with swirling mist and ancient banyan roots.",
+      "focus_character": "None",
+      "background": "Twilight forest with mist and large banyan roots.",
+      "action": "Establishing shot of the forest, mystical and serene."
+    },
+    {
+      "scene_number": 2,
+      "scene_description": "A boy with an elephant head sits in tranquil meditation at the base of a banyan tree.",
+      "focus_character": "Lord Ganesha",
+      "background": "Forest floor beneath a massive banyan tree.",
+      "action": "Lord Ganesha meditates, calm and motionless."
+    },
+    {
+      "scene_number": 3,
+      "scene_description": "A subtle drumbeat echoes through the forest, synchronized with the earth's rhythm.",
+      "focus_character": "Lord Ganesha",
+      "background": "Trees gently swaying as vibrations echo through the ground.",
+      "action": "The earth responds to Ganesha’s breath with rhythmic pulses."
+    },
+    {
+      "scene_number": 4,
+      "scene_description": "Fireflies swirl around Ganesha, forming glowing Sanskrit mantras mid-air.",
+      "focus_character": "Lord Ganesha",
+      "background": "Glowing fireflies illuminating the darkened forest.",
+      "action": "Fireflies orbit Ganesha, tracing divine patterns in light."
+    },
+    {
+      "scene_number": 5,
+      "scene_description": "Moonlight breaks through the canopy, spotlighting Ganesha’s form.",
+      "focus_character": "Lord Ganesha",
+      "background": "Forest canopy with moonlight piercing through.",
+      "action": "A beam of moonlight hits Ganesha, intensifying his glow."
+    },
+    {
+      "scene_number": 6,
+      "scene_description": "A golden aura bursts from Ganesha’s body, illuminating the forest.",
+      "focus_character": "Lord Ganesha",
+      "background": "The entire forest glows golden from the emitted aura.",
+      "action": "Ganesha radiates power, his energy surging outward."
+    },
+    {
+      "scene_number": 7,
+      "scene_description": "From his palm, a glowing lotus forms, radiating cosmic energy.",
+      "focus_character": "Lord Ganesha",
+      "background": "Aura-lit forest with glowing symbols in the air.",
+      "action": "A luminous lotus blooms from Ganesha’s hand."
+    },
+    {
+      "scene_number": 8,
+      "scene_description": "The lotus petals contain spinning universes in perfect harmony.",
+      "focus_character": "Lord Ganesha",
+      "background": "Close-up on the cosmic lotus above Ganesha’s hand.",
+      "action": "Each petal reveals a miniature universe in motion."
+    },
+    {
+      "scene_number": 9,
+      "scene_description": "A distant demonic roar disrupts the silence, signaling chaos approaching.",
+      "focus_character": "Distant Demon",
+      "background": "Dark edge of the forest, echoing with monstrous growls.",
+      "action": "A tremor and roar mark the demon’s arrival."
+    },
+    {
+      "scene_number": 10,
+      "scene_description": "Ganesha calmly opens one eye, unfazed by the threat.",
+      "focus_character": "Lord Ganesha",
+      "background": "Still-lit forest with a looming shadow at its edge.",
+      "action": "Ganesha reacts with divine serenity, opening his eye slowly."
+    },
+    {
+      "scene_number": 11,
+      "scene_description": "With a whisper, his voice turns to thunder, summoning nature’s power.",
+      "focus_character": "Lord Ganesha",
+      "background": "Wind-tossed forest erupting with divine force.",
+      "action": "Vines, stars, and silence surge forward to combat the darkness."
+    },
+    {
+      "scene_number": 12,
+      "scene_description": "The forest bows in reverence as balance is restored. Ganesha stands victorious.",
+      "focus_character": "Lord Ganesha",
+      "background": "Calm forest bathed in golden light.",
+      "action": "Ganesha stands, radiant and divine, as harmony returns."
+    }
+  ]
+}

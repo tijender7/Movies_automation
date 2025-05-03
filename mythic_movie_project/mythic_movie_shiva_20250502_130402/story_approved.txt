@@ -1,0 +1,6 @@
+json
+Copy
+Edit
+{
+  "story": "Under a storm-churned sky, atop the silent peaks of Mount Kailash, Shiva sits in stillness—ashen skin glowing faintly in the twilight. His matted locks unravel with the wind, cradling the crescent moon and trickling Ganga like threads of light. Around him, the cosmos breathes. Tigers prowl in the distance; serpents coil loosely at his throat, unthreatened. Each breath he takes trembles through creation, scattering stars. As his eyes open, the third blazes like a sun—past, present, and future collapsing into a single divine flame. In his silence, time dissolves. The damaru beats, echoing the rhythm of the universe’s pulse. Then, rising slowly, Shiva dances. Not to music, but to destruction and renewal. Flames spiral from his feet; galaxies swirl with each movement. Above all, there is stillness within chaos—Shiva, the eye of eternity."
+}

@@ -1,0 +1,351 @@
+{
+    "8": {
+      "inputs": {
+        "samples": [
+          "123",
+          0
+        ],
+        "vae": [
+          "39",
+          0
+        ]
+      },
+      "class_type": "VAEDecode",
+      "_meta": {
+        "title": "VAE Decode"
+      }
+    },
+    "39": {
+      "inputs": {
+        "vae_name": "sdxl_vae.safetensors"
+      },
+      "class_type": "VAELoader",
+      "_meta": {
+        "title": "Load VAE"
+      }
+    },
+    "49": {
+      "inputs": {
+        "clip_name": "clip_vision_h.safetensors"
+      },
+      "class_type": "CLIPVisionLoader",
+      "_meta": {
+        "title": "Load CLIP Vision"
+      }
+    },
+    "50": {
+      "inputs": {
+        "width": 480,
+        "height": 832,
+        "length": 81,
+        "batch_size": 1,
+        "positive": [
+          "220",
+          0
+        ],
+        "negative": [
+          "221",
+          0
+        ],
+        "vae": [
+          "39",
+          0
+        ],
+        "clip_vision_output": [
+          "51",
+          0
+        ],
+        "start_image": [
+          "126",
+          0
+        ]
+      },
+      "class_type": "WanImageToVideo",
+      "_meta": {
+        "title": "API_Image_To_Video_Settings"
+      }
+    },
+    "51": {
+      "inputs": {
+        "crop": "center",
+        "clip_vision": [
+          "49",
+          0
+        ],
+        "image": [
+          "126",
+          0
+        ]
+      },
+      "class_type": "CLIPVisionEncode",
+      "_meta": {
+        "title": "CLIP Vision Encode"
+      }
+    },
+    "54": {
+      "inputs": {
+        "unet_name": "stable_video_diffusion/svd_xt.safetensors"
+      },
+      "class_type": "SVDXTUnetLoader",
+      "_meta": {
+        "title": "SVDXTUnetLoader"
+      }
+    },
+    "55": {
+      "inputs": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": [
+          "405",
+          0
+        ],
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "images": [
+          "8",
+          0
+        ]
+      },
+      "class_type": "VHS_VideoCombine",
+      "_meta": {
+        "title": "API_Save_Base_Video"
+      }
+    },
+    "60": {
+      "inputs": {
+        "clip_name": "CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors",
+        "type": "stable_cascade"
+      },
+      "class_type": "CLIPLoaderGGUF",
+      "_meta": {
+        "title": "CLIPLoader (GGUF)"
+      }
+    },
+    "63": {
+      "inputs": {
+        "shift": 5.000000000000001,
+        "model": [
+          "99",
+          0
+        ]
+      },
+      "class_type": "ModelSamplingSD3",
+      "_meta": {
+        "title": "ModelSamplingSD3"
+      }
+    },
+    "67": {
+      "inputs": {
+        "PowerLoraLoaderHeaderWidget": {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        "lora_1": {
+          "on": false,
+          "lora": "None",
+          "strength": 1
+        },
+        "lora_2": {
+          "on": false,
+          "lora": "None",
+          "strength": 1
+        },
+        "lora_3": {
+          "on": false,
+          "lora": "None",
+          "strength": 1
+        },
+        "lora_4": {
+          "on": false,
+          "lora": "None",
+          "strength": 1
+        },
+        "lora_5": {
+          "on": false,
+          "lora": "None",
+          "strength": 1
+        },
+        "➕ Add Lora": "",
+        "model": [
+          "239",
+          0
+        ],
+        "clip": [
+          "60",
+          0
+        ]
+      },
+      "class_type": "Power Lora Loader (rgthree)",
+      "_meta": {
+        "title": "Power Lora Loader (rgthree)"
+      }
+    },
+    "97": {
+      "inputs": {
+        "rel_l1_thresh": 0.25000000000000006,
+        "start_percent": 0,
+        "end_percent": 1,
+        "cache_device": "main_device",
+        "coefficients": "i2v_480",
+        "model": [
+          "67",
+          0
+        ]
+      },
+      "class_type": "WanVideoTeaCacheKJ",
+      "_meta": {
+        "title": "WanVideo Tea Cache (native)"
+      }
+    },
+    "99": {
+      "inputs": {
+        "k": 6,
+        "model": [
+          "102",
+          0
+        ],
+        "latent": [
+          "50",
+          2
+        ]
+      },
+      "class_type": "ApplyRifleXRoPE_WanVideo",
+      "_meta": {
+        "title": "Apply RifleXRoPE WanVideo"
+      }
+    },
+    "102": {
+      "inputs": {
+        "weight": 0.20000000000000004,
+        "model": [
+          "106",
+          0
+        ],
+        "latent": [
+          "50",
+          2
+        ]
+      },
+      "class_type": "WanVideoEnhanceAVideoKJ",
+      "_meta": {
+        "title": "WanVideo Enhance A Video (native)"
+      }
+    },
+    "106": {
+      "inputs": {
+        "blocks": "9",
+        "start_percent": 0,
+        "end_percent": 0.9000000000000002,
+        "model": [
+          "97",
+          0
+        ]
+      },
+      "class_type": "SkipLayerGuidanceWanVideo",
+      "_meta": {
+        "title": "Skip Layer Guidance WanVideo"
+      }
+    },
+    "123": {
+      "inputs": {
+        "seed": 80085,
+        "steps": 24,
+        "cfg": 4,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "denoise": 1,
+        "model": [
+          "63",
+          0
+        ],
+        "positive": [
+          "50",
+          0
+        ],
+        "negative": [
+          "50",
+          1
+        ],
+        "latent_image": [
+          "50",
+          2
+        ]
+      },
+      "class_type": "KSampler",
+      "_meta": {
+        "title": "API_Seed_Input"
+      }
+    },
+    "126": {
+      "inputs": {
+        "image": "start_image.png",
+        "resize": true,
+        "width": 480,
+        "height": 832,
+        "repeat": 1,
+        "keep_proportion": true,
+        "divisible_by": 16,
+        "mask_channel": "alpha",
+        "background_color": ""
+      },
+      "class_type": "LoadAndResizeImage",
+      "_meta": {
+        "title": "API_Video_Start_Image"
+      }
+    },
+    "220": {
+      "inputs": {
+        "text": "positive prompt here",
+        "clip": [
+          "67",
+          1
+        ]
+      },
+      "class_type": "CLIPTextEncode",
+      "_meta": {
+        "title": "API_Positive_Prompt"
+      }
+    },
+    "221": {
+      "inputs": {
+        "text": "negative prompt here",
+        "clip": [
+          "67",
+          1
+        ]
+      },
+      "class_type": "CLIPTextEncode",
+      "_meta": {
+        "title": "API_Negative_Prompt"
+      }
+    },
+    "239": {
+      "inputs": {
+        "sage_attention": "auto",
+        "model": [
+          "54",
+          0
+        ]
+      },
+      "class_type": "PathchSageAttentionKJ",
+      "_meta": {
+        "title": "Patch Sage Attention KJ"
+      }
+    },
+    "405": {
+      "inputs": {
+        "date": "false",
+        "date_directory": "false",
+        "custom_directory": "",
+        "custom_text": ""
+      },
+      "class_type": "FileNamePrefix",
+      "_meta": {
+        "title": "API_Output_Prefix_Base"
+      }
+    }
+  }

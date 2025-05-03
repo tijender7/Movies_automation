@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Approve Generated Character Images</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f4f4f4; }
+        h1, h2 { color: #333; }
+        .actor-section { margin-bottom: 30px; padding: 20px; background-color: #fff; border: 1px solid #ccc; border-radius: 5px; }
+        .image-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; margin-top: 10px; }
+        .image-container { border: 1px solid #ddd; padding: 10px; text-align: center; position: relative; }
+        .image-container img { max-width: 100%; height: auto; display: block; margin-bottom: 5px; border: 2px solid transparent; }
+        .image-container input[type="checkbox"] {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            transform: scale(1.5);
+            cursor: pointer;
+        }
+        .image-container input[type="checkbox"]:checked + label img {
+            border: 3px solid #007bff;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        }
+        .image-container label {
+            display: block;
+            margin-top: 5px;
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+        .skip-option { margin-top: 15px; padding-top: 10px; border-top: 1px dashed #ccc; }
+        .info { background-color: #d1ecf1; border-left: 6px solid #0c5460; color: #0c5460; padding: 15px; margin-bottom: 20px;}
+        .submit-button { padding: 12px 25px; font-size: 1.1em; background-color: #28a745; color: white; border: none; cursor: pointer; border-radius: 4px; margin-top: 20px; }
+        .submit-button:hover { background-color: #218838; }
+        .error { color: red; font-weight: bold; }
+        .waiting { font-style: italic; color: #777; }
+        .no-candidates { color: #777; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <h1>Approve Generated Images</h1>
+        <p><strong>Movie:</strong> {{ movie_name }}</p>
+        <p>Review the generated & face-swapped images below (medium/full body versions if available).</p>
+        <p>For each character, select <b>any number</b> of images you want to approve for video generation, or choose 'Skip' to exclude this actor entirely.</p>
+        <p>Click the single "Submit All Approvals" button at the bottom when finished.</p>
+    </div>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if all_candidates_to_approve %}
+        <form action="/submit_approvals" method="post">
+            {% for actor_name, data in all_candidates_to_approve.items() %}
+                <div class="actor-section">
+                    <h2>{{ actor_name }} <small>({{ data.character_name }})</small></h2>
+                    <input type="hidden" name="actors_processed" value="{{ actor_name }}">
+
+                    {% if data.candidates %}
+                        <div class="image-grid">
+                            {% for candidate in data.candidates %}
+                                <div class="image-container">
+                                    <img src="/generated_images/{{ candidate.relative_path }}" alt="Generated for {{ actor_name }}">
+                                    <input type="checkbox"
+                                           name="approval_{{ actor_name }}"
+                                           value="{{ candidate.full_path }}"
+                                           id="approve_{{ actor_name }}_{{ loop.index }}">
+                                    <label for="approve_{{ actor_name }}_{{ loop.index }}">
+                                        {{ candidate.filename }}
+                                    </label>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="skip-option">
+                            <input type="checkbox" name="skip_{{ actor_name }}" value="SKIP" id="skip_{{ actor_name }}">
+                            <label for="skip_{{ actor_name }}">Skip this actor entirely (Do not generate video for this actor)</label>
+                        </div>
+                    {% else %}
+                        <p class="no-candidates">No generated candidate images found for this actor.</p>
+                        <input type="hidden" name="skip_{{ actor_name }}" value="SKIP">
+                    {% endif %}
+                </div>
+            {% endfor %}
+            <hr>
+            <button type="submit" class="submit-button">Submit All Approvals</button>
+        </form>
+    {% else %}
+        <p class="waiting">Waiting for the main script to generate candidate images...</p>
+    {% endif %}
+
+</body>
+</html>

@@ -1,0 +1,550 @@
+{
+  "5": {
+    "inputs": {
+      "width": [
+        "390",
+        0
+      ],
+      "height": [
+        "390",
+        1
+      ],
+      "batch_size": 4
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "29": {
+    "inputs": {
+      "samples": [
+        "292",
+        0
+      ],
+      "vae": [
+        "195",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "35": {
+    "inputs": {
+      "text": "naked, nude, child, kid, tits, ",
+      "clip": [
+        "594",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "56": {
+    "inputs": {
+      "conditioning": [
+        "35",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "81": {
+    "inputs": {
+      "anything": [
+        "594",
+        1
+      ]
+    },
+    "class_type": "Anything Everywhere",
+    "_meta": {
+      "title": "Anything Everywhere"
+    }
+  },
+  "125": {
+    "inputs": {
+      "anything": [
+        "195",
+        0
+      ]
+    },
+    "class_type": "Anything Everywhere",
+    "_meta": {
+      "title": "Anything Everywhere"
+    }
+  },
+  "195": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "224": {
+    "inputs": {
+      "clip_name1": "clip_l.safetensors",
+      "clip_name2": "t5xxl_fp16.safetensors",
+      "type": "flux",
+      "device": "cpu"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "DualCLIPLoader"
+    }
+  },
+  "270": {
+    "inputs": {
+      "text": [
+        "617",
+        0
+      ],
+      "clip": [
+        "594",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "292": {
+    "inputs": {
+      "noise": [
+        "295",
+        0
+      ],
+      "guider": [
+        "298",
+        0
+      ],
+      "sampler": [
+        "293",
+        0
+      ],
+      "sigmas": [
+        "294",
+        0
+      ],
+      "latent_image": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "293": {
+    "inputs": {
+      "sampler_name": "dpmpp_2m"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "294": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 30,
+      "denoise": 1,
+      "model": [
+        "594",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "295": {
+    "inputs": {
+      "noise_seed": 286331074606496
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "297": {
+    "inputs": {},
+    "class_type": "Anything Everywhere",
+    "_meta": {
+      "title": "Anything Everywhere"
+    }
+  },
+  "298": {
+    "inputs": {
+      "cfg": 1,
+      "model": [
+        "594",
+        0
+      ],
+      "positive": [
+        "300",
+        0
+      ],
+      "negative": [
+        "56",
+        0
+      ]
+    },
+    "class_type": "CFGGuider",
+    "_meta": {
+      "title": "CFGGuider"
+    }
+  },
+  "300": {
+    "inputs": {
+      "guidance": 2.5,
+      "conditioning": [
+        "270",
+        0
+      ]
+    },
+    "class_type": "FluxGuidance",
+    "_meta": {
+      "title": "FluxGuidance"
+    }
+  },
+  "390": {
+    "inputs": {
+      "megapixel": "1.0",
+      "aspect_ratio": "16:9 (Panorama)",
+      "custom_ratio": false,
+      "custom_aspect_ratio": "1:1"
+    },
+    "class_type": "FluxResolutionNode",
+    "_meta": {
+      "title": "Flux Resolution Calc"
+    }
+  },
+  "402": {
+    "inputs": {
+      "max_shift": 1.05,
+      "base_shift": 0.65,
+      "width": [
+        "390",
+        0
+      ],
+      "height": [
+        "390",
+        1
+      ]
+    },
+    "class_type": "ModelSamplingFlux",
+    "_meta": {
+      "title": "ModelSamplingFlux"
+    }
+  },
+  "427": {
+    "inputs": {
+      "unet_name": "copaxTimeless_xplus4GUFF.gguf"
+    },
+    "class_type": "UnetLoaderGGUF",
+    "_meta": {
+      "title": "Unet Loader (GGUF)"
+    }
+  },
+  "510": {
+    "inputs": {
+      "text": [
+        "390",
+        2
+      ],
+      "text_1": "1344 x 768"
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text \ud83d\udc0d"
+    }
+  },
+  "590": {
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "592": {
+    "inputs": {
+      "rgthree_comparer": {
+        "images": [
+          {
+            "name": "A1",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_dzmoj_00129_.png&type=temp&subfolder=&rand=0.5491293056119286"
+          },
+          {
+            "name": "A2",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_dzmoj_00130_.png&type=temp&subfolder=&rand=0.1503862121924503"
+          },
+          {
+            "name": "A3",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_dzmoj_00131_.png&type=temp&subfolder=&rand=0.7253743500304944"
+          },
+          {
+            "name": "A4",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_dzmoj_00132_.png&type=temp&subfolder=&rand=0.8396149022680144"
+          },
+          {
+            "name": "B1",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_dzmoj_00133_.png&type=temp&subfolder=&rand=0.5262887375316647"
+          },
+          {
+            "name": "B2",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_dzmoj_00134_.png&type=temp&subfolder=&rand=0.7814778798585597"
+          },
+          {
+            "name": "B3",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_dzmoj_00135_.png&type=temp&subfolder=&rand=0.33333958493618165"
+          },
+          {
+            "name": "B4",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_dzmoj_00136_.png&type=temp&subfolder=&rand=0.7164224582891869"
+          }
+        ]
+      },
+      "image_a": [
+        "29",
+        0
+      ],
+      "image_b": [
+        "29",
+        0
+      ]
+    },
+    "class_type": "Image Comparer (rgthree)",
+    "_meta": {
+      "title": "Image Comparer (rgthree)"
+    }
+  },
+  "594": {
+    "inputs": {
+      "lora_01": "bigg-flux.safetensors",
+      "strength_01": 0.8000000000000002,
+      "lora_02": "None",
+      "strength_02": 0.3,
+      "lora_03": "None",
+      "strength_03": 0.3,
+      "lora_04": "None",
+      "strength_04": -6.940000000000001,
+      "model": [
+        "610",
+        0
+      ],
+      "clip": [
+        "224",
+        0
+      ]
+    },
+    "class_type": "Lora Loader Stack (rgthree)",
+    "_meta": {
+      "title": "Lora Loader Stack (rgthree)"
+    }
+  },
+  "596": {
+    "inputs": {
+      "width": 1664,
+      "height": 960,
+      "batch_size": 2
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "606": {
+    "inputs": {
+      "sharpen_radius": 1,
+      "sigma": 0.10000000000000002,
+      "alpha": 0.5,
+      "image": [
+        "29",
+        0
+      ]
+    },
+    "class_type": "ImageSharpen",
+    "_meta": {
+      "title": "Image Sharpen"
+    }
+  },
+  "607": {
+    "inputs": {
+      "filename_prefix": [
+        "611",
+        0
+      ],
+      "images": [
+        "606",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "609": {
+    "inputs": {
+      "rgthree_comparer": {
+        "images": [
+          {
+            "name": "A1",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_nuplo_00129_.png&type=temp&subfolder=&rand=0.9392022341496657"
+          },
+          {
+            "name": "A2",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_nuplo_00130_.png&type=temp&subfolder=&rand=0.42259573038442355"
+          },
+          {
+            "name": "A3",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_nuplo_00131_.png&type=temp&subfolder=&rand=0.18826492710441634"
+          },
+          {
+            "name": "A4",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_nuplo_00132_.png&type=temp&subfolder=&rand=0.7712459086568209"
+          },
+          {
+            "name": "B1",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_nuplo_00133_.png&type=temp&subfolder=&rand=0.8237800782685888"
+          },
+          {
+            "name": "B2",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_nuplo_00134_.png&type=temp&subfolder=&rand=0.7660171778600723"
+          },
+          {
+            "name": "B3",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_nuplo_00135_.png&type=temp&subfolder=&rand=0.19696451937259185"
+          },
+          {
+            "name": "B4",
+            "selected": false,
+            "url": "/api/view?filename=rgthree.compare._temp_nuplo_00136_.png&type=temp&subfolder=&rand=0.2153802818332149"
+          }
+        ]
+      },
+      "image_a": [
+        "29",
+        0
+      ],
+      "image_b": [
+        "606",
+        0
+      ]
+    },
+    "class_type": "Image Comparer (rgthree)",
+    "_meta": {
+      "title": "Image Comparer (rgthree)"
+    }
+  },
+  "610": {
+    "inputs": {
+      "sage_attention": "auto",
+      "model": [
+        "619",
+        0
+      ]
+    },
+    "class_type": "PathchSageAttentionKJ",
+    "_meta": {
+      "title": "Patch Sage Attention KJ"
+    }
+  },
+  "611": {
+    "inputs": {
+      "date": "true",
+      "date_directory": "true",
+      "custom_directory": "ytparty/the awakening",
+      "custom_text": ""
+    },
+    "class_type": "FileNamePrefix",
+    "_meta": {
+      "title": "File Name Prefix (Mikey)"
+    }
+  },
+  "617": {
+    "inputs": {
+      "text": "Cinematic close-up of Lord Shiva seated motionless at the edge of a rocky Himalayan cliff, wrapped in tiger skin with ash-smeared, ash-grey skin glowing faintly with a celestial aura. He has an extremely muscular, bodybuilder physique and sits in a meditative posture radiating divine calm. His long, jet black hair with blue undertones is coiled into a high jata, with strands flowing freely, from which the sacred Ganga flows in mid-air mist. A glowing crescent moon rests on his brow above glowing deep blue eyes and a fiery vertical third eye. His minimal ascetic attire in brown, black, and amber is adorned with sacred rudraksha beads. A serpent is coiled around his neck, and a damaru rests in his hand. The atmosphere is mythic and still, with dramatic lighting casting elongated shadows. Camera slowly pans in from a low angle, emphasizing Shiva’s towering 7-foot divine presence, with a glowing aura encircling him and the landscape silent in awe"
+    },
+    "class_type": "Text Multiline",
+    "_meta": {
+      "title": "Text Multiline"
+    }
+  },
+  "619": {
+    "inputs": {
+      "model_type": "flux",
+      "rel_l1_thresh": 0.4,
+      "max_skip_steps": 3,
+      "model": [
+        "590",
+        0
+      ]
+    },
+    "class_type": "TeaCache",
+    "_meta": {
+      "title": "TeaCache"
+    }
+  },
+  "627": {
+    "inputs": {
+      "filename_prefix": [
+        "611",
+        0
+      ],
+      "images": [
+        "606",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "632": {
+    "inputs": {
+      "prompt": "What is Art?",
+      "debug": "enable",
+      "url": "http://127.0.0.1:11434",
+      "model": "qwen2.5-coder:3b",
+      "keep_alive": 5,
+      "format": "text"
+    },
+    "class_type": "OllamaGenerate",
+    "_meta": {
+      "title": "Ollama Generate"
+    }
+  }
+}

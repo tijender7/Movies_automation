@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Select All Actor Images</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f4f4f4; }
+        h1, h2 { color: #333; }
+        .actor-section { margin-bottom: 30px; padding: 20px; background-color: #fff; border: 1px solid #ccc; border-radius: 5px; }
+        .image-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; margin-top: 10px; }
+        .image-container { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        .image-container img { max-width: 100%; height: auto; display: block; margin-bottom: 5px; }
+        .image-container label { display: block; margin-top: 5px; font-size: 0.9em; }
+        .skip-option { margin-top: 15px; }
+        .info { background-color: #e7f3fe; border-left: 6px solid #2196F3; padding: 15px; margin-bottom: 20px;}
+        .submit-button { padding: 12px 25px; font-size: 1.1em; background-color: #007bff; color: white; border: none; cursor: pointer; border-radius: 4px; margin-top: 20px; }
+        .submit-button:hover { background-color: #0056b3; }
+        .error { color: red; font-weight: bold; }
+        .waiting { font-style: italic; color: #777; }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <h1>Select Best Source Images</h1>
+        <p><strong>Movie:</strong> {{ movie_name }}</p>
+        <p>For each actor below, select the best <strong>REAL photo</strong> from the correct era (avoid AI art, poor quality, etc.) OR choose to skip the actor.</p>
+        <p>Click the single "Submit All Selections" button at the bottom when finished.</p>
+    </div>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if all_candidates %}
+        <form action="/submit_all" method="post">
+            {% for actor_name, data in all_candidates.items() %}
+                <div class="actor-section">
+                    <h2>{{ actor_name }} <small>({{ data.character_name }})</small></h2>
+                     <input type="hidden" name="actors_processed" value="{{ actor_name }}">
+                    <div class="image-grid">
+                        {% for candidate in data.candidates %}
+                            <div class="image-container">
+                                <img src="/images/{{ candidate.relative_path }}" alt="Candidate for {{ actor_name }}">
+                                <input type="radio" name="selection_{{ actor_name }}" value="{{ candidate.full_path }}" id="img_{{ actor_name }}_{{ loop.index }}">
+                                <label for="img_{{ actor_name }}_{{ loop.index }}">{{ candidate.filename }}</label>
+                            </div>
+                        {% else %}
+                             <p>No valid candidate images found after filtering.</p>
+                        {% endfor %}
+                    </div>
+                    <div class="skip-option">
+                        <input type="radio" name="selection_{{ actor_name }}" value="SKIP" id="skip_{{ actor_name }}" {% if not data.candidates %}checked{% endif %}>
+                        <label for="skip_{{ actor_name }}">Skip this actor</label>
+                    </div>
+                </div>
+            {% endfor %}
+            <hr>
+            <button type="submit" class="submit-button">Submit All Selections</button>
+        </form>
+    {% else %}
+        <p class="waiting">Waiting for the main script to gather all candidate images...</p>
+    {% endif %}
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "characters": [
+    {
+      "name": "Lord Ganesha",
+      "overall_description": "A divine boy with an elephant head, meditating in a mystical forest, radiating calm power and cosmic energy.",
+      "visual_details": {
+        "gender": "Male",
+        "age_appearance": "Child",
+        "body_type": "Sturdy",
+        "height_estimate": "Short",
+        "skin_tone": "Dusky",
+        "hair_color": "Black",
+        "hair_style": "Unspecified",
+        "eye_color": "Brown",
+        "clothing_style": "Traditional dhoti",
+        "clothing_colors": [
+          "Orange",
+          "Gold"
+        ],
+        "accessories": "Golden ornaments, sacred thread",
+        "notable_features": "Elephant head, golden aura, glowing lotus emerging from palm, calm expression with divine presence"
+      }
+    },
+    {
+      "name": "Distant Demon",
+      "overall_description": "An unseen chaotic force advancing toward the forest, representing darkness and disorder.",
+      "visual_details": {
+        "gender": "Unspecified",
+        "age_appearance": "Unspecified",
+        "body_type": "Unspecified",
+        "height_estimate": "Unspecified",
+        "skin_tone": "Unspecified",
+        "hair_color": "Unspecified",
+        "hair_style": "Unspecified",
+        "eye_color": "Unspecified",
+        "clothing_style": "Unspecified",
+        "clothing_colors": [],
+        "accessories": "Unspecified",
+        "notable_features": "Roaring presence, symbolic of chaos"
+      }
+    }
+  ]
+}

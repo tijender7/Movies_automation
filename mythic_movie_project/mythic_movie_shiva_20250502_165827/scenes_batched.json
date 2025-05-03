@@ -1,0 +1,88 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_description": "Snow-covered Himalayan peaks rise into the heavens, shrouded in mist and glowing softly under celestial light.",
+      "focus_character": "None",
+      "background": "Himalayan mountain range, clouds drifting low",
+      "action": "Establishing shot of serene, icy landscape where time feels suspended"
+    },
+    {
+      "scene_number": 2,
+      "scene_description": "Shiva sits motionless at the mountain’s edge, wrapped in tiger skin, body smeared with ash, radiating divine calm.",
+      "focus_character": "Shiva",
+      "background": "Rocky mountain ledge, faint aura surrounding Shiva",
+      "action": "Camera slowly pans in on Shiva’s still form"
+    },
+    {
+      "scene_number": 3,
+      "scene_description": "His thick matted hair rises like coiled serpents, a stream of the Ganga pouring from the locks with divine flow.",
+      "focus_character": "Shiva",
+      "background": "Hair illuminated with a holy glow, water glistening mid-air",
+      "action": "Close-up on hair, revealing flowing Ganga with soft mist"
+    },
+    {
+      "scene_number": 4,
+      "scene_description": "The crescent moon shines from his forehead, and his third eye glows faintly with fiery energy.",
+      "focus_character": "Shiva",
+      "background": "Forehead glowing with cosmic symbols and light",
+      "action": "Zoom to brow, showing pulsing third eye and moonlight reflection"
+    },
+    {
+      "scene_number": 5,
+      "scene_description": "Time itself holds its breath—snowflakes float mid-air, frozen before they touch the ground.",
+      "focus_character": "None",
+      "background": "Silent snowy cliffside, particles frozen in space",
+      "action": "Slow-motion shot of hovering snowflakes around Shiva"
+    },
+    {
+      "scene_number": 6,
+      "scene_description": "Shiva beats a small damaru, its rhythm shaking the fabric of time with each pulse.",
+      "focus_character": "Shiva",
+      "background": "Vibrating air, glowing sound ripples through space",
+      "action": "Focus on damaru as beats create visible time waves"
+    },
+    {
+      "scene_number": 7,
+      "scene_description": "Each drumbeat births time itself, while the pauses end cosmic cycles in silence.",
+      "focus_character": "Shiva",
+      "background": "Shimmering time-threads forming and vanishing around him",
+      "action": "Transition between pulses and silences shaping existence"
+    },
+    {
+      "scene_number": 8,
+      "scene_description": "Nandi, Shiva’s loyal bull, rests near him like a divine statue carved by eternal devotion.",
+      "focus_character": "Nandi",
+      "background": "Sacred rock platform beside Shiva, faint golden light on Nandi",
+      "action": "Still frame of Nandi with gentle divine glow, unmoving and watchful"
+    },
+    {
+      "scene_number": 9,
+      "scene_description": "Suddenly, a serpent glides across Shiva’s shoulders, its body shimmering with ancient runes.",
+      "focus_character": "Serpent",
+      "background": "Close-up of Shiva's upper body, serpent in motion",
+      "action": "Serpent slithers in slow, graceful motion with glowing patterns"
+    },
+    {
+      "scene_number": 10,
+      "scene_description": "The serpent hisses, its sound echoing like the voice of the void.",
+      "focus_character": "Serpent",
+      "background": "Air trembles as the hiss warps the silence",
+      "action": "Camera zooms on serpent’s mouth as it emits a deep, echoing hiss"
+    },
+    {
+      "scene_number": 11,
+      "scene_description": "With a deep breath, Shiva opens his eyes—storms rise, galaxies ripple through his gaze.",
+      "focus_character": "Shiva",
+      "background": "Explosive cosmic visuals behind him, sky darkens",
+      "action": "Shiva’s eyes flash open, triggering massive universal tremors"
+    },
+    {
+      "scene_number": 12,
+      "scene_description": "He closes his eyes again; silence reigns and creation folds back into stillness.",
+      "focus_character": "Shiva",
+      "background": "Still Himalayan scene returns, snow settles softly",
+      "action": "Galaxies vanish, light dims, world returns to calm with Shiva’s exhale"
+    }
+  ]
+}

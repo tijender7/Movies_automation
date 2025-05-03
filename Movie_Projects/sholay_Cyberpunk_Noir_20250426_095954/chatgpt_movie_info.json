@@ -1,0 +1,82 @@
+{
+  "movie_characters": [
+    {
+      "character_name": "Veeru",
+      "actor_name": "Dharmendra",
+      "description": "The fun-loving, mischievous, and brave hero, Veeru brought humor and heart to the film, creating an unforgettable bromance with Jai.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Jai",
+      "actor_name": "Amitabh Bachchan",
+      "description": "The calm, composed, and sharp-shooter partner to Veeru; Jai's cool demeanor and tragic end made him a timeless legend.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Gabbar Singh",
+      "actor_name": "Amjad Khan",
+      "description": "The ruthless, menacing dacoit whose iconic dialogue delivery ('Kitne aadmi the?') made him one of the most terrifying and memorable villains in Indian cinema history.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Thakur Baldev Singh",
+      "actor_name": "Sanjeev Kumar",
+      "description": "The dignified, stoic ex-police officer whose quest for justice after personal tragedy forms the emotional core of the story.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Basanti",
+      "actor_name": "Hema Malini",
+      "description": "The spirited, talkative tonga driver whose feisty attitude and charm brought energy and humor, especially in her scenes with Veeru.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Radha",
+      "actor_name": "Jaya Bhaduri",
+      "description": "The silent, sorrowful widow who portrayed deep emotional strength and stoic endurance, offering a contrast to the action-packed story.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Soorma Bhopali",
+      "actor_name": "Jagdeep",
+      "description": "The bumbling, comic timber merchant whose small role became iconic for its hilarious dialogues and exaggerated mannerisms.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Sambha",
+      "actor_name": "Mac Mohan",
+      "description": "Gabbar Singh’s loyal henchman with minimal lines but maximum impact; his 'poochhne waale ka naam Sambha' dialogue became iconic.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Kaalia",
+      "actor_name": "Viju Khote",
+      "description": "Another memorable henchman of Gabbar, made famous by the chilling scene where Gabbar demands accountability ('Tera kya hoga Kaalia?').",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Jailor",
+      "actor_name": "Asrani",
+      "description": "The hilarious, bumbling British-style jailor whose satirical depiction of colonial officers became one of the film’s most famous comic reliefs.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Ramlal",
+      "actor_name": "A.K. Hangal",
+      "description": "The loyal servant of Thakur, whose heartfelt moments added emotional gravity to the storyline, especially during the flashback scenes.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Mausi",
+      "actor_name": "Leela Mishra",
+      "description": "Basanti’s talkative and practical aunt whose marriage discussions with Veeru created classic, humorous moments.",
+      "release_year": "1975"
+    },
+    {
+      "character_name": "Imam Saheb",
+      "actor_name": "Iftekhar",
+      "description": "The wise and respected blind man of the village whose tragic loss highlighted the cruelty of Gabbar Singh and rallied the villagers' emotions.",
+      "release_year": "1975"
+    }
+  ]
+}
