@@ -15,7 +15,7 @@
     "inputs": {
       "model": "Wan2_1-I2V-14B-480P_fp8_e5m2.safetensors",
       "base_precision": "fp16",
-      "quantization": "fp8_e5m2",
+      "quantization": "fp8_e4m3fn",
       "load_device": "offload_device",
       "attention_mode": "sageattn",
       "block_swap_args": [
@@ -34,15 +34,15 @@
   },
   "27": {
     "inputs": {
-      "steps": 20,
-      "cfg": 6.000000000000001,
-      "shift": 7.000000000000002,
+      "steps": 10,
+      "cfg": 1.0000000000000002,
+      "shift": 8.000000000000002,
       "seed": 166203438864850,
       "force_offload": true,
       "scheduler": "unipc",
       "riflex_freq_index": 0,
       "denoise_strength": 1,
-      "batched_cfg": false,
+      "batched_cfg": "",
       "rope_function": "comfy",
       "model": [
         "22",
@@ -58,14 +58,6 @@
       ],
       "feta_args": [
         "55",
-        0
-      ],
-      "teacache_args": [
-        "52",
-        0
-      ],
-      "slg_args": [
-        "186",
         0
       ]
     },
@@ -102,7 +94,7 @@
         0
       ],
       "loop_count": 0,
-      "filename_prefix": "",
+      "filename_prefix": "wantestkijaiupscale\\withloraNORMALI2V480",
       "format": "video/h264-mp4",
       "pix_fmt": "yuv420p",
       "crf": 19,
@@ -132,7 +124,7 @@
   },
   "39": {
     "inputs": {
-      "blocks_to_swap": 20,
+      "blocks_to_swap": 10,
       "offload_img_emb": false,
       "offload_txt_emb": false,
       "use_non_blocking": true,
@@ -143,23 +135,9 @@
       "title": "WanVideo BlockSwap"
     }
   },
-  "52": {
-    "inputs": {
-      "rel_l1_thresh": 0.25000000000000006,
-      "start_step": 6,
-      "end_step": -1,
-      "cache_device": "offload_device",
-      "use_coefficients": true,
-      "mode": "e"
-    },
-    "class_type": "WanVideoTeaCache",
-    "_meta": {
-      "title": "WanVideo TeaCache"
-    }
-  },
   "55": {
     "inputs": {
-      "weight": 2.0000000000000004,
+      "weight": 2,
       "start_percent": 0,
       "end_percent": 1
     },
@@ -169,6 +147,21 @@
     }
   },
   "59": {
+    "inputs": {
+      "lora": "wan\\Wan21_CausVid_14B_T2V_lora_rank32.safetensors",
+      "strength": 0.20000000000000004,
+      "low_mem_load": false,
+      "prev_lora": [
+        "135",
+        0
+      ]
+    },
+    "class_type": "WanVideoLoraSelect",
+    "_meta": {
+      "title": "WanVideo Lora Select"
+    }
+  },
+  "135": {
     "inputs": {
       "lora": "wan\\Wan2.1-Fun-14B-InP-MPS_reward_lora_comfy.safetensors",
       "strength": 1.0000000000000002,
@@ -194,15 +187,24 @@
       "title": "API_Prompt_Input"
     }
   },
-  "186": {
+  "190": {
     "inputs": {
-      "blocks": "9",
-      "start_percent": 0.20000000000000004,
-      "end_percent": 0.8000000000000002
+      "model_name": "4x_foolhardy_Remacri.pth"
     },
-    "class_type": "WanVideoSLG",
+    "class_type": "UpscaleModelLoader",
     "_meta": {
-      "title": "WanVideo SLG"
+      "title": "Upscaler"
+    }
+  },
+  "246": {
+    "inputs": {
+      "model": "gimmvfi_f_arb_lpips_fp32.safetensors",
+      "precision": "fp32",
+      "torch_compile": false
+    },
+    "class_type": "DownloadAndLoadGIMMVFIModel",
+    "_meta": {
+      "title": "(Down)Load GIMMVFI Model"
     }
   },
   "264": {
@@ -269,18 +271,18 @@
     },
     "class_type": "PreviewAnimation",
     "_meta": {
-      "title": "Preview Animation 65x832x464"
+      "title": "Preview Animation 81x832x464"
     }
   },
   "340": {
     "inputs": {
-      "generation_width": 480,
-      "generation_height": 832,
+      "generation_width": 832,
+      "generation_height": 480,
       "num_frames": 81,
       "force_offload": true,
-      "noise_aug_strength": 0.030000000000000006,
-      "latent_strength": 1.0000000000000002,
-      "clip_embed_strength": 1.0000000000000002,
+      "noise_aug_strength": 0.03,
+      "latent_strength": 1,
+      "clip_embed_strength": 1,
       "adjust_resolution": true,
       "clip_vision": [
         "342",
@@ -302,7 +304,7 @@
   },
   "341": {
     "inputs": {
-      "image": "250427115919_swapped_medium__00001_.png"
+      "image": "250422105328_VIDEO_Dharmendra_approved_full_3__00001.png"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -318,18 +320,6 @@
     "class_type": "LoadWanVideoClipTextEncoder",
     "_meta": {
       "title": "Load WanVideo Clip Encoder"
-    }
-  },
-  "403": {
-    "inputs": {
-      "date": "true",
-      "date_directory": "true",
-      "custom_directory": "Run_20250415_071344/all_videos",
-      "custom_text": "001_video_swapped"
-    },
-    "class_type": "FileNamePrefix",
-    "_meta": {
-      "title": "API_Output_Prefix"
     }
   }
 }
