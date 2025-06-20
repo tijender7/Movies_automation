@@ -1,6 +1,0 @@
-json
-Copy
-Edit
-{
-  "story": "In a dense twilight forest, mist swirled around ancient banyan roots as a boy with an elephant head sat in tranquil meditation. A gentle drumbeat echoed through the trees — not from instruments, but the rhythm of the earth responding to his breath. Glowing fireflies circled him, forming luminous Sanskrit mantras in the air. As moonlight pierced the canopy, a golden aura erupted from his seated form, and from his palm bloomed a lotus made of pure energy. Each of its petals held a universe, spinning in divine harmony. A distant demon's roar cracked the silence — chaos advancing. But the boy opened one eye, calm and all-knowing. With a mere whisper, his voice turned into thunder. Vines, stars, and silence surged forth, sweeping darkness away. The forest bowed. Lord Ganesha stood, not just a remover of obstacles, but a cosmic architect sketching balance into existence."
-}
